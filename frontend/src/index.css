@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font:inherit
+}
+
+html:focus-within{
+    scroll-behavior: smooth;
+}
+html,
+body{
+    height: 100%;
+    color:wheat;
+}
+body{
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    overflow-x: hidden;}
+
+@media (prefers-reduced-motion:reduce){
+    html:focus-within{
+        scroll-behavior: auto;
+}
+
+*,
+*::before,
+*::after{
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+}
+}
+html {
+    background-image: url('../public/Picl.webp') ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Add this property */
+    height: 100%;
+    width: 100%;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(114, 113, 113);
+    border-radius: 10px;
+    height: 200px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
